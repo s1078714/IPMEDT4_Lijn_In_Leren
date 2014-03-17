@@ -22,6 +22,15 @@ public final class R {
     }
     public static final class string {
         public static final int app_name=0x7f040000;
+        public static final int error_message_bad_url=0x7f040007;
+        public static final int error_message_file_not_found=0x7f040008;
+        public static final int error_message_general=0x7f040009;
+        public static final int progress_dialog_message_prefix_connecting=0x7f040004;
+        public static final int progress_dialog_message_prefix_downloading=0x7f040003;
+        public static final int progress_dialog_title_connecting=0x7f040002;
+        public static final int progress_dialog_title_downloading=0x7f040001;
+        public static final int user_message_download_canceled=0x7f040006;
+        public static final int user_message_download_complete=0x7f040005;
     }
     public static final class style {
         /** 
