@@ -1,5 +1,7 @@
 package ipmedt4.Lijn.In.Leren;
 
+
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View.OnClickListener;
@@ -12,7 +14,9 @@ public class MainActivity extends Activity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main );
+		setContentView(R.layout.main_activity);
+		
+		
 		
 		populateListView();
 	}
