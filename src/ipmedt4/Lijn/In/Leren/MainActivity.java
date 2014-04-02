@@ -10,6 +10,8 @@ import android.widget.ListView;
 
 public class MainActivity extends Activity 
 {
+	ResultatenDataSource datasource;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
