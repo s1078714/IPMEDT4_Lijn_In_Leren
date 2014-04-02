@@ -16,7 +16,7 @@ public class Groepen extends ListActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_activity );
-		
+		//listview setonclicklistener toevoegen
 		populateListView();
 	}
 	
