@@ -1,7 +1,7 @@
 package ipmedt4.Lijn.In.Leren;
 
 import java.util.List;
-
+import com.example.lijn_in_leren.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View.OnClickListener;
