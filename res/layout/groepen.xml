@@ -2,15 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
-    
-    <Button
-        android:id="@+id/addBtn"
-        android:text="Groep1"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:onClick="addItems"/>
-    
-    
-   
+    android:orientation="vertical"
+    >
+
+    <Listview
+        android:id="@+id/groeplistview1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+    </Listview>
+
+
 </LinearLayout>
