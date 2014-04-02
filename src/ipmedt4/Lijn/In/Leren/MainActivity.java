@@ -51,7 +51,7 @@ public class MainActivity extends Activity
 				myItems);			// Items to be displayed
 
 		// Configure the list view
-		ListView list = (ListView) findViewById(R.id.listViewMain);
+		ListView list = (ListView) findViewById(R.id.listView1);
 		list.setAdapter(myAdapter);
 	}
 }
