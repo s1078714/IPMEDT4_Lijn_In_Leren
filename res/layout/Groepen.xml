@@ -4,7 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    <Button
+        android:id="@+id/addBtn"
+        android:text="Groep1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addItems"/>
+    
     <ListView 
+        android:id="@id/Groepenlistview1"
 		android:layout_width="fill_parent"
 		android:layout_height="wrap_content"			
 	>			

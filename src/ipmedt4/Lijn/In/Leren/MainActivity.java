@@ -2,11 +2,14 @@ package ipmedt4.Lijn.In.Leren;
 
 
 
+import com.example.lijn_in_leren.R;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
 
 public class MainActivity extends Activity 
 {
@@ -14,9 +17,9 @@ public class MainActivity extends Activity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main_activity);
+		setContentView(R.layout.activity_main);
 		
-		
+		ListView listView = (ListView) findViewById(R.id.list);
 		
 		populateListView();
 	}

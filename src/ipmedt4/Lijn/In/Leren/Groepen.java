@@ -1,6 +1,9 @@
 package ipmedt4.Lijn.In.Leren;
 
 
+
+import com.example.lijn_in_leren.R;
+
 import android.app.Activity;
 import android.app.ListActivity;
 import android.os.Bundle;
@@ -12,7 +15,7 @@ public class Groepen extends ListActivity
 	protected void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(android.R.layout.Groepen );
+		setContentView(R.layout.activity_main );
 		
 		populateListView();
 	}
