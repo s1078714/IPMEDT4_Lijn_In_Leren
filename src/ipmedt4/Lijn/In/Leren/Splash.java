@@ -4,50 +4,37 @@ import com.example.lijn_in_leren.R;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-
-public class Splash extends Activity{
-MediaPlayer ourSong;
-	@Override
-	protected void onCreate(Bundle TravisLoveBacon) {
-		// TODO Auto-generated method stub
-		super.onCreate(TravisLoveBacon);
-		setContentView(R.layout.splash);
-		ourSong = MediaPlayer.create(Splash.this, R.raw.intro);
-		
-		
-		SharedPreferences getPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
-		boolean music = getPrefs.getBoolean("checkbox", true);
-		
-		if(music == true)
-			ourSong.start();
-		
-		Thread timer = new Thread(){
-			public void run(){
-				try{
-					sleep(3000);
-				} 
-				catch(InterruptedException e){
-					e.printStackTrace();
-				}
-				finally{
-					Intent openMainActivity = new Intent("com.example.newboston.MENU");
-					startActivity(openMainActivity);
-				}
-			}
-		};
-		timer.start();
-	}
-
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
-		ourSong.release();
-		finish();
-	}
-
+import android.os.Handler;
+ 
+public class Splash extends Activity {
+ 
+    // Splash screen timer
+    private static int SPLASH_TIME_OUT = 3000;
+ 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.splash);
+ 
+        new Handler().postDelayed(new Runnable() {
+ 
+            /*
+             * Showing splash screen with a timer. This will be useful when you
+             * want to show case your app logo / company
+             */
+ 
+            @Override
+            public void run() {
+                // This method will be executed once the timer is over
+                // Start your app main activity
+                Intent i = new Intent(Splash.this, MainActivity.class);
+                startActivity(i);
+ 
+                // close this activity
+                finish();
+            }
+        }, SPLASH_TIME_OUT);
+    }
+ 
 }
